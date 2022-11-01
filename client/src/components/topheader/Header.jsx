@@ -25,7 +25,7 @@ function Header() {
             <Link to='../home' className="icon"><i class="fa-solid fa-house"></i></Link>
             <span className="icon"><i class="fa-solid fa-user"></i></span>
             <span className="icon"><i class="fa-solid fa-bell"></i></span>
-            <span className="icon"><i class="fa-solid fa-message"></i></span>
+            <Link to='../chat' className="icon"><i class="fa-solid fa-message"></i></Link>
             <span className="icon"><i class="fa-solid fa-grip"></i></span>
         </div>
         <div className="col headerProfile">
