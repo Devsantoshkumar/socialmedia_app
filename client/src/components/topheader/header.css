@@ -1,0 +1,80 @@
+.header{
+    grid-column: 1/4;
+    width: 100%;
+    height: 60px;
+    background-color: var(--header-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.027) 0px 3px 8px;
+    margin-bottom: 1rem;
+}
+.header .col{
+    color: #fff;
+    padding: 0 10px;
+}
+.logoLink{
+    font-size: 20px;
+    color: var(--white-gray);
+    text-decoration: none;
+    font-weight: bold;
+}
+.searchBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.searchBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: var(--white-gray);
+    
+}
+.searchBox span{
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.headerIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.headerIcons .icon{
+    cursor: pointer;
+    color: var(--white-gray);
+    font-size: 18px;
+}
+
+.profileDetails{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12px;
+}
+.profileDetails .name{
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--white-gray);
+}
+.profileDetails img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--white-gray);
+    cursor: pointer;
+
+}

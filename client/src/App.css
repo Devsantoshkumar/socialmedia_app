@@ -19,13 +19,18 @@
    --video: #4a4eb7;
    --location: #ef5757;
    --shedule: #e1ae4a;
+   --header-color: #2C3A47;
+   --body-color: #EAEFF3;
+   --white-gray: #EEEEEE;
+   --dark-gray: #192a56;
+   --dark-yellow: #ff9f43;
 }
 
 .App{
   overflow: hidden;
   color: var(--black);
   background-color: #f3f3f3;
-  padding: 1rem 1rem;
+  position: relative;
 }
 .button{
   display: flex;
@@ -68,6 +73,7 @@
 .home{
   position: relative;
   display: grid;
+  grid-template-rows: repeat(2, max-height);
   grid-template-columns: 18rem auto 20rem;
   gap: 1rem;
 }
@@ -79,51 +85,14 @@
   gap: 1rem;
   align-items: center;
   overflow: auto; 
+  margin-left: 1rem;
 }
  
-/* Home Logo search style */
-.logoSearch{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
-}
-.logoSearch > img{
-  width: 3rem;
-  height: 3rem;
-}
-.logoSearch >a> img{
-  width: 3rem;
-  height: 3rem;
-}
-.search{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--inputColor);
-  border-radius: 10px;
-  padding: 5px;
-}
-
-.search input{
-  border: none;
-  outline: none;
-  background-color: transparent;
-  padding: 3px;
-}
-
-.search span{
-   color: #fff;
-   background-color: var(--orange);
-   padding: 3px;
-   border-radius: 5px;
-   cursor: pointer;
-}
 
 /* Home profile card style */
 
 .profileCard{
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -388,6 +357,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-right: 1rem;
 }
 .navIcons{
   display: flex;
@@ -435,6 +405,8 @@
   display: grid;
   grid-template-columns: 18rem auto 20rem;
   gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .InfoCard{
@@ -443,7 +415,7 @@
   gap: 0.75rem;
   background-color: #fff;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin: 10px 0;
 }
 .infoHeading{
