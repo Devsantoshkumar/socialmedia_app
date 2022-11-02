@@ -51,7 +51,7 @@ const Auth = () => {
       <div className="a-left">
         <img src={Network} alt="" />
         <div className="webname">
-          <h1>Social Network</h1>
+          <h1>Connect</h1>
           <h6>Who is your's close to heart, connect them</h6>
         </div>
       </div>
