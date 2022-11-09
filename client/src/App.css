@@ -127,7 +127,6 @@
   border-radius: 50%;
   position: absolute;
   bottom: -3rem;
-  left: 2.5rem;
   box-shadow: var(--profileShadow);
   border: 3px solid var(--location);
    

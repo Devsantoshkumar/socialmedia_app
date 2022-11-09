@@ -10,8 +10,8 @@ function App() {
   const user = useSelector((state)=>state.AuthReducer.authData)
   return (
     <div className="App">
-      <div className="blur" style={{top: '-25px',right: '0'}}></div>
-      <div className="blur" style={{top: '10rem',left: '-8rem'}}></div>
+      {/* <div className="blur" style={{top: '-25px',right: '0'}}></div>
+      <div className="blur" style={{top: '10rem',left: '-8rem'}}></div> */}
       <Routes>
          <Route path='/' element={user?<Navigate to="home" />: <Navigate to="auth" />} />
          <Route path="/home" element = {user? <Home/> : <Navigate to='../auth' />} />

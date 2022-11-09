@@ -49,7 +49,6 @@ const Auth = () => {
     <div className="Auth">
       {/* left side */}
       <div className="a-left">
-        <img src={Network} alt="" />
         <div className="webname">
           <h1>Connect</h1>
           <h6>Who is your's close to heart, connect them</h6>
