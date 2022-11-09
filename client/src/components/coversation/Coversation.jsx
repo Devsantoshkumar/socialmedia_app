@@ -30,7 +30,7 @@ const Coversation = ({data, currentUserId, online}) => {
             />
             <div className="name" style={{fontSize: "0.8rem"}}>
                 <span>{userData?.firstname} {userData?.lastname}</span>
-                <span>{online ? "online" : "offline"}</span>
+                <span className={online ? "online" : "offline"}>{online ? "online" : "offline"}</span>
             </div>
         </div>
     </div>

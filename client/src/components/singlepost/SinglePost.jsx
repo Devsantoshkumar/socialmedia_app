@@ -6,7 +6,8 @@ import share from '../../images/send.png'
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { likePost } from '../../api/PostRequest'
-
+import "./singlepost.css";
+import {format} from "timeago.js";
 
 
 const SinglePost = ({data}) => {
@@ -14,6 +15,7 @@ const SinglePost = ({data}) => {
 
   const [liked, setliked] = useState(data.likes.includes(user._id))
   const [likes, setlikes] = useState(data.likes.length)
+  const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER
   
   const handleLike =()=>{
     setliked((prev)=>!prev)
@@ -23,6 +25,10 @@ const SinglePost = ({data}) => {
 
   return (
     <div className='post'>
+        <div className="postProfileDetails">
+           <div className="pimg"><img src={user.profilePicture? serverPublic + user.profilePicture : serverPublic + "defaultprofile.png"} alt="" /></div>
+           <span>{format(data.createdAt)}</span>
+        </div>
         <img src={data.image? process.env.REACT_APP_PUBLIC_FOLDER + data.image: ""} alt="" />
 
         <div className="postReact">

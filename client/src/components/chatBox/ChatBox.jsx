@@ -109,9 +109,9 @@ const ChatBox = ({chat, currentUser, setSendMessage, receiveMessage}) => {
                 }
             </div>
             <div className="chat-sender">
-                <div>+</div>
+                <div style={{display: "none"}}>+</div>
                 <InputEmoji value={newMassage} onChange = {handleChange} />
-                <div className="send-button button" onClick={handleSend}>SEND</div>
+                <div className="send-button button" style={{padding: "0.9rem 0.7rem"}} onClick={handleSend}>SEND</div>
             </div>
             </>
         ) : <span className='chatbox-empty-message'>Tap on the chat and start conversation</span>}

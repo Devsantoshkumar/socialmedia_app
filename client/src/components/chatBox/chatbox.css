@@ -1,12 +1,11 @@
 .ChatBox-container {
     background: #ffff;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     display: grid;
     grid-template-rows: 14vh 60vh 13vh;
 }
-
-.chat-header {
-    padding: 1rem 1rem 0rem 1rem;
+.chat-header{
+    padding: 1.6rem;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid #eee;
@@ -16,6 +15,10 @@
 }
 .chat-header .headerchat img{
     border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.chat-header .headerchat span{
+    font-size: 1.2rem;
 }
 .chat-body {
     display: flex;
@@ -26,41 +29,40 @@
 }
 
 .message {
-
-  background: var(--buttonBg);
+  background: rgb(250, 172, 77);
   color: white;
-  padding: 0.7rem;
-  border-radius: 1rem 1rem 1rem 0;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
   max-width: 28rem;
   width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .message>span:nth-child(2){
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: var(--textColor);
     align-self: end;
 }
 
 .own {
   align-self: flex-end;
-  border-radius: 1rem 1rem 0 1rem;
-  background: linear-gradient(98.63deg, #24e4f0 0%, #358ff9 100%);
+  border-radius: 0.5rem;
+  background: palevioletred;
 }
 
 
 
 .chat-sender {
-    background: white;
+    border-top: 2px solid #eee;
     display: flex;
     justify-content: space-between;
     height: 3.5rem;
     align-items: center;
     gap: 1rem;
     padding: 0.8rem;
-    border-radius: 1rem;
     align-self: end;
 }
 .chat-sender>input{
